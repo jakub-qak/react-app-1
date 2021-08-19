@@ -2,3 +2,5 @@ build
 coverage
 node_modules
 package-lock.json
+.github/actions/hello/dist/index.js
+.github/actions/issue/dist/index.js
