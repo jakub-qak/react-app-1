@@ -9,6 +9,11 @@ jobs:
         with:
           slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
           message: Hello Slack
+      - name: Send a Slack Message
+        uses: ./.github/actions/slack
+        with:
+          slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
+          message: Hello Slack
       - uses: alialaa/open-issue@v1
         id: issue
         with:
